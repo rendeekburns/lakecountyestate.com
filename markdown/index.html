@@ -59,7 +59,8 @@ just add 2 spaces at the end of the line.</p>
 
 <h2 class="section-title" id="headers">Headers</h2>
 
-<pre class="highlight markdown">	# H1 header
+<pre class="highlight markdown">
+	# H1 header
 	## H2 header
 	### H3 header
 	#### H4 header
@@ -82,9 +83,10 @@ just add 2 spaces at the end of the line.</p>
 
 <h2 class="section-title" id="code-blocks">Code Blocks</h2>
 
-<pre class="highlight markdown">	~~~ language
+<pre class="highlight markdown">
+	<span class="p">~~~</span><span class="nl"> language</span><span class="sb">
 	code here
-	~~~
+	</span><span class="p">~~~</span>
 
 </pre>
 
@@ -120,7 +122,8 @@ just add 2 spaces at the end of the line.</p>
 
 <h2 class="section-title" id="tables">Tables</h2>
 
-<pre class="highlight markdown">	|-----------------+-----------------+-----------------|
+<pre class="highlight markdown">
+	|-----------------+-----------------+-----------------|
 	| Heading         | Heading         | Heading         |
 	|-----------------|-----------------|-----------------|
 	| Price of thing  | Price of thing  | Price of thing  |
@@ -180,7 +183,8 @@ just add 2 spaces at the end of the line.</p>
 
 <h2 class="section-title" id="horizontal-rules">Horizontal Rules</h2>
 
-<pre class="highlight markdown"><span class="p">	---
+<pre class="highlight markdown"><span class="p">
+	---
 
 </span></pre>
 
@@ -188,7 +192,8 @@ just add 2 spaces at the end of the line.</p>
 
 <h2 class="section-title" id="lists">Lists</h2>
 
-<pre class="highlight markdown"><span class="p">	*</span> Item one
+<pre class="highlight markdown"><span class="p">
+	*</span> Item one
 <span class="p">	*</span> Item two
 <span class="p">	*</span> Item three
 
@@ -200,7 +205,8 @@ just add 2 spaces at the end of the line.</p>
   <li>Item three</li>
 </ul>
 
-<pre class="highlight markdown"><span class="p">	*</span> Item one
+<pre class="highlight markdown"><span class="p">
+	*</span> Item one
 <span class="p">	*</span> Item two
 <span class="p">	*</span> Item three
 	{: .default-ul }
@@ -213,7 +219,8 @@ just add 2 spaces at the end of the line.</p>
   <li>Item three</li>
 </ul>
 
-<pre class="highlight markdown"><span class="p">	1.</span> Item one
+<pre class="highlight markdown"><span class="p">
+	1.</span> Item one
 <span class="p">	2.</span> Item two
 <span class="p">	3.</span> Item three
 	{: .default-ol }
@@ -228,7 +235,8 @@ just add 2 spaces at the end of the line.</p>
 
 <h2 class="section-title" id="blockquotes">Blockquotes</h2>
 
-<pre class="highlight markdown"><span class="gt">	&gt; A sample blockquote.</span>
+<pre class="highlight markdown"><span class="gt">
+	&gt; A sample blockquote.</span>
 <span class="gt">	&gt;</span>
 <span class="gt">	&gt; &gt;Nested blockquotes are</span>
 <span class="gt">	&gt; &gt;also possible.</span>
@@ -246,7 +254,8 @@ also possible.</p>
 
 <h1 class="section-title" id="definition-lists">Definition Lists</h1>
 
-<pre class="highlight markdown">	term
+<pre class="highlight markdown">
+	term
 	: definition<span class="sb">
 
 	term
@@ -270,7 +279,8 @@ also possible.</p>
 
 <h2 class="section-title" id="block-attributes">Block Attributes</h2>
 
-<pre class="highlight markdown"><span class="gt">	&gt; Blockquote with a title</span>
+<pre class="highlight markdown"><span class="gt">
+	&gt; Blockquote with a title</span>
 	{: title="Blockquote title"}<span class="sb">
 
 	This is *emphasized*,
@@ -297,7 +307,8 @@ also possible.</p>
 
 <h2 class="section-title" id="links-and-images">Links and Images</h2>
 
-<pre class="highlight markdown">	A <span class="p">[</span><span class="nv">link</span><span class="p">](</span><span class="sx">http://kramdown.gettalong.org</span><span class="p">)</span> to the kramdown homepage.<span class="sb">
+<pre class="highlight markdown">
+	A <span class="p">[</span><span class="nv">link</span><span class="p">](</span><span class="sx">http://kramdown.gettalong.org</span><span class="p">)</span> to the kramdown homepage.<span class="sb">
 
 	![Placeholder Image](http://placehold.it/300x50)
 
@@ -309,7 +320,8 @@ also possible.</p>
 
 <h2 class="section-title" id="inline-code">Inline Code</h2>
 
-<pre class="highlight markdown">	Use <span class="sb">`Kramdown::Document.new(text).to_html`</span>
+<pre class="highlight markdown">
+	Use <span class="sb">`Kramdown::Document.new(text).to_html`</span>
 	to convert the <span class="sb">`text`</span> in kramdown
 	syntax to HTML.<span class="sb">
 
@@ -327,7 +339,8 @@ e.g. <code>`code`</code>.</p>
 
 <h2 class="section-title" id="inline-attributes">Inline Attributes</h2>
 
-<pre class="highlight markdown">	This is <span class="ge">*red*</span>{: style="color: red"}.
+<pre class="highlight markdown">
+	This is <span class="ge">*red*</span>{: style="color: red"}.
 
 </pre>
 
@@ -335,7 +348,8 @@ e.g. <code>`code`</code>.</p>
 
 <h2 class="section-title" id="footnotes">Footnotes</h2>
 
-<pre class="highlight markdown">	This is a text with a footnote<span class="p">[</span><span class="nv">^1</span><span class="p">]</span>.<span class="sb">
+<pre class="highlight markdown">
+	This is a text with a footnote<span class="p">[</span><span class="nv">^1</span><span class="p">]</span>.<span class="sb">
 
 	[^1]: And here is the definition.
 
