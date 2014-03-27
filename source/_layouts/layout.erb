@@ -16,11 +16,20 @@
 
     <header class="site-header">
       <div class="container">
-        <%= partial "_layouts/nav" %>
+        <%= image_tag lorem.image('150x150'), class: 'profile-img' %>
+
+        <nav class="site-nav" role="navigation">
+          <div class="nav-links">
+            <%= link_to 'Home', '/', class: 'nav-right' %>
+            <%= link_to 'Docs', '/docs/', class: 'nav-right' %>
+            <div class="mobile-menu"><i class="icon icon-reorder"></i></div>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <main class="site-main container">
+
+    <main class="site-main">
       <%= yield %>
     </main>
 
