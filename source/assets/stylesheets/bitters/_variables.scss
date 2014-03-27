@@ -23,6 +23,8 @@ $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
+$emerald-green: #50C878;
+$black: #000000;
 
 // Body Color
 $base-body-color: white;
@@ -50,5 +52,5 @@ $one-pixel: 0.0625em; // Used for setting max-width mq's
 $unit: $base-font-size;
 
 $primary: $blue;
-$secondary: darken($primary, 15);
+$secondary: $white;
 $tertiary: darken($primary, 35);

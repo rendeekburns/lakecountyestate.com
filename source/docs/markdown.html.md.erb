@@ -2,369 +2,371 @@
 title: Markdown Style Guide
 ---
 
+<div class="container">
 
-<%= partial '/docs/subnav' %>
+	<%= partial '/docs/subnav' %>
 
 
-# Markdown Style Guide
-{: .page-title}
+	# Markdown Style Guide
+	{: .page-title}
 
-<nav id="toc"></nav>
+	<nav id="toc"></nav>
 
-<!-- This entire page is authored with markdown.
-{: .notice} -->
+	<!-- This entire page is authored with markdown.
+	{: .notice} -->
 
-## Paragraphs
-{: .section-title}
+	## Paragraphs
+	{: .section-title}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Here's a paragraph with a linebreak,
-just add 2 spaces at the end of the line.
+	Here's a paragraph with a linebreak,
+	just add 2 spaces at the end of the line.
 
 
 
-## Headers
-{: .section-title}
+	## Headers
+	{: .section-title}
 
 
-<% code("markdown") do %>
-# H1 header
-## H2 header
-### H3 header
-#### H4 header
-##### H5 header
-###### H6 header
-<% end %>
+	<% code("markdown") do %>
+	# H1 header
+	## H2 header
+	### H3 header
+	#### H4 header
+	##### H5 header
+	###### H6 header
+	<% end %>
 
-# H1 header
+	# H1 header
 
-## H2 header
+	## H2 header
 
-### H3 header
+	### H3 header
 
-#### H4 header
+	#### H4 header
 
-##### H5 header
+	##### H5 header
 
-###### H6 header
+	###### H6 header
 
 
 
-## Code Blocks
-{: .section-title}
+	## Code Blocks
+	{: .section-title}
 
 
-<% code("markdown") do %>
-~~~ language
-code here
-~~~
-<% end %>
+	<% code("markdown") do %>
+	~~~ language
+	code here
+	~~~
+	<% end %>
 
-#### Ruby
+	#### Ruby
 
-~~~ ruby
-def what?
-	42
-end
-~~~
+	~~~ ruby
+	def what?
+		42
+	end
+	~~~
 
-#### HTML
+	#### HTML
 
-~~~ html
-<link rel="stylesheet" href="css/style.css" />
-~~~
+	~~~ html
+	<link rel="stylesheet" href="css/style.css" />
+	~~~
 
-#### SCSS
+	#### SCSS
 
-~~~ scss
-body {
-	background: red;
-}
-~~~
+	~~~ scss
+	body {
+		background: red;
+	}
+	~~~
 
-#### Javascript
+	#### Javascript
 
-~~~ javascript
-console.log("hi");
-~~~
+	~~~ javascript
+	console.log("hi");
+	~~~
 
-#### Bash
+	#### Bash
 
-~~~ bash
-# Start your engines
-$ grunt dev
-~~~
+	~~~ bash
+	# Start your engines
+	$ grunt dev
+	~~~
 
 
 
-## Tables
-{: .section-title }
+	## Tables
+	{: .section-title }
+
+	<% code("markdown") do %>
+	|-----------------+-----------------+-----------------|
+	| Heading         | Heading         | Heading         |
+	|-----------------|-----------------|-----------------|
+	| Price of thing  | Price of thing  | Price of thing  |
+	| Price of thing  | Price of thing  | Price of thing  |
+	| Price of thing  | Price of thing  | Price of thing  |
+	| Price of thing  | Price of thing  | Price of thing  |
+	| Price of thing  | Price of thing  | Price of thing  |
+	|-----------------|-----------------|-----------------|
+	|=====
+	| Foot1   | Foot2   | Foot3
+	<% end %>
+
+	|-----------------+-----------------+-----------------|
+	| Heading         | Heading         | Heading         |
+	|-----------------|-----------------|-----------------|
+	| Price of thing  | Price of thing  | Price of thing  |
+	| Price of thing  | Price of thing  | Price of thing  |
+	| Price of thing  | Price of thing  | Price of thing  |
+	| Price of thing  | Price of thing  | Price of thing  |
+	| Price of thing  | Price of thing  | Price of thing  |
+	|-----------------|-----------------|-----------------|
+	|=====
+	| Foot1   | Foot2   | Foot3
+
+	## Horizontal Rules
+	{: .section-title }
+
+
+	<% code("markdown") do %>
+	---
+	<% end %>
+
+	---
+
+	## Lists
+	{: .section-title }
+
+	<% code("markdown") do %>
+	* Item one
+	* Item two
+	* Item three
+	<% end %>
 
-<% code("markdown") do %>
-|-----------------+-----------------+-----------------|
-| Heading         | Heading         | Heading         |
-|-----------------|-----------------|-----------------|
-| Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  |
-|-----------------|-----------------|-----------------|
-|=====
-| Foot1   | Foot2   | Foot3
-<% end %>
-
-|-----------------+-----------------+-----------------|
-| Heading         | Heading         | Heading         |
-|-----------------|-----------------|-----------------|
-| Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  |
-|-----------------|-----------------|-----------------|
-|=====
-| Foot1   | Foot2   | Foot3
-
-## Horizontal Rules
-{: .section-title }
-
-
-<% code("markdown") do %>
----
-<% end %>
-
----
-
-## Lists
-{: .section-title }
-
-<% code("markdown") do %>
-* Item one
-* Item two
-* Item three
-<% end %>
+	* Item one
+	* Item two
+	* Item three
 
-* Item one
-* Item two
-* Item three
+	<% code("markdown") do %>
+	* Item one
+	* Item two
+	* Item three
+	{: .default-ul }
+	<% end %>
 
-<% code("markdown") do %>
-* Item one
-* Item two
-* Item three
-{: .default-ul }
-<% end %>
+	* Item one
+	* Item two
+	* Item three
+	{: .default-ul }
 
-* Item one
-* Item two
-* Item three
-{: .default-ul }
+	<% code("markdown") do %>
+	1. Item one
+	2. Item two
+	3. Item three
+	{: .default-ol }
+	<% end %>
 
-<% code("markdown") do %>
-1. Item one
-2. Item two
-3. Item three
-{: .default-ol }
-<% end %>
+	1. Item one
+	2. Item two
+	3. Item three
+	{: .default-ol }
 
-1. Item one
-2. Item two
-3. Item three
-{: .default-ol }
 
+	## Blockquotes
+	{: .section-title}
 
-## Blockquotes
-{: .section-title}
+	<% code("markdown") do %>
+	> A sample blockquote.
+	>
+	> >Nested blockquotes are
+	> >also possible.
+	<% end %>
 
-<% code("markdown") do %>
-> A sample blockquote.
->
-> >Nested blockquotes are
-> >also possible.
-<% end %>
+	> A sample blockquote.
+	>
+	> >Nested blockquotes are
+	> >also possible.
 
-> A sample blockquote.
->
-> >Nested blockquotes are
-> >also possible.
+	# Definition Lists
+	{: .section-title}
 
-# Definition Lists
-{: .section-title}
 
+	<% code("markdown") do %>
+	term
+	: definition
 
-<% code("markdown") do %>
-term
-: definition
+	term
+	: definition
 
-term
-: definition
+	term
+	: definition
+	: another definition
+	<% end %>
 
-term
-: definition
-: another definition
-<% end %>
+	term
+	: definition
 
-term
-: definition
+	term
+	: definition
 
-term
-: definition
+	term
+	: definition
+	: another definition
 
-term
-: definition
-: another definition
 
 
+	## Block Attributes
+	{: .section-title}
 
-## Block Attributes
-{: .section-title}
+	<% code("markdown") do %>
+	> Blockquote with a title
+	{: title="Blockquote title"}
 
-<% code("markdown") do %>
-> Blockquote with a title
-{: title="Blockquote title"}
+	This is *emphasized*,
+	_this_ too!
 
-This is *emphasized*,
-_this_ too!
+	This is **strong**,
+	__this__ too!
 
-This is **strong**,
-__this__ too!
+	This w**ork**s as expected!
+	<% end %>
 
-This w**ork**s as expected!
-<% end %>
+	> Blockquote with a title
+	{: title="Blockquote title"}
 
-> Blockquote with a title
-{: title="Blockquote title"}
+	This is *emphasized*,
+	_this_ too!
 
-This is *emphasized*,
-_this_ too!
+	This is **strong**,
+	__this__ too!
 
-This is **strong**,
-__this__ too!
+	This w**ork**s as expected!
 
-This w**ork**s as expected!
 
 
+	## Links and Images
+	{: .section-title}
 
-## Links and Images
-{: .section-title}
+	<% code("markdown") do %>
+	A [link](http://kramdown.gettalong.org) to the kramdown homepage.
 
-<% code("markdown") do %>
-A [link](http://kramdown.gettalong.org) to the kramdown homepage.
+	![Placeholder Image](http://placehold.it/300x50)
+	<% end %>
 
-![Placeholder Image](http://placehold.it/300x50)
-<% end %>
+	A [link](http://kramdown.gettalong.org) to the kramdown homepage.
 
-A [link](http://kramdown.gettalong.org) to the kramdown homepage.
+	![Placeholder Image](http://placehold.it/300x50)
 
-![Placeholder Image](http://placehold.it/300x50)
 
 
+	## Inline Code
+	{: .section-title}
 
-## Inline Code
-{: .section-title}
+	<% code("markdown") do %>
+	Use `Kramdown::Document.new(text).to_html`
+	to convert the `text` in kramdown
+	syntax to HTML.
 
-<% code("markdown") do %>
-Use `Kramdown::Document.new(text).to_html`
-to convert the `text` in kramdown
-syntax to HTML.
+	Use backticks to markup code,
+	e.g. `` `code` ``.
+	<% end %>
 
-Use backticks to markup code,
-e.g. `` `code` ``.
-<% end %>
+	Use `Kramdown::Document.new(text).to_html`
+	to convert the `text` in kramdown
+	syntax to HTML.
 
-Use `Kramdown::Document.new(text).to_html`
-to convert the `text` in kramdown
-syntax to HTML.
+	Use backticks to markup code,
+	e.g. `` `code` ``.
 
-Use backticks to markup code,
-e.g. `` `code` ``.
 
 
+	## Inline Attributes
+	{: .section-title}
 
-## Inline Attributes
-{: .section-title}
+	<% code("markdown") do %>
+	This is *red*{: style="color: red"}.
+	<% end %>
 
-<% code("markdown") do %>
-This is *red*{: style="color: red"}.
-<% end %>
+	This is *red*{: style="color: red"}.
 
-This is *red*{: style="color: red"}.
 
 
+	## Footnotes
+	{: .section-title}
 
-## Footnotes
-{: .section-title}
 
+	<% code("markdown") do %>
+	This is a text with a footnote[^1].
 
-<% code("markdown") do %>
-This is a text with a footnote[^1].
+	[^1]: And here is the definition.
+	<% end %>
 
-[^1]: And here is the definition.
-<% end %>
+	This is a text with a
+	footnote[^1].
 
-This is a text with a
-footnote[^1].
+	[^1]: And here is the definition.
 
-[^1]: And here is the definition.
 
+	<% content_for :css do %>
+	<style>
+		.table-of-contents:before, .table-of-contents:after { content: " "; display: table; }
+		.table-of-contents:after { clear: both; }
+		.table-of-contents { margin-bottom: 20px; padding: 1.5em 1.5em 1em; border: 8px solid #eee; }
+		.table-of-contents h2 { margin: 0 0 .75em; }
+		.table-of-contents li { float: left; width: 50%; }
+			@media (min-width: 35em) { .table-of-contents li {width: 33.333%; }}
+			@media (min-width: 45em) { .table-of-contents li {width: 25%; }}
+			@media (min-width: 75em) { .table-of-contents li {width: 20%; }}
+		.table-of-contents li a { display: block; margin: 0 1em .5em 0; }
+	</style>
+	<% end %>
 
-<% content_for :css do %>
-<style>
-	.table-of-contents:before, .table-of-contents:after { content: " "; display: table; }
-	.table-of-contents:after { clear: both; }
-	.table-of-contents { margin-bottom: 20px; padding: 1.5em 1.5em 1em; border: 8px solid #eee; }
-	.table-of-contents h2 { margin: 0 0 .75em; }
-	.table-of-contents li { float: left; width: 50%; }
-		@media (min-width: 35em) { .table-of-contents li {width: 33.333%; }}
-		@media (min-width: 45em) { .table-of-contents li {width: 25%; }}
-		@media (min-width: 75em) { .table-of-contents li {width: 20%; }}
-	.table-of-contents li a { display: block; margin: 0 1em .5em 0; }
-</style>
-<% end %>
+	<% content_for :js do %>
+	<script>
 
-<% content_for :js do %>
-<script>
+		var $h2s = $('h2').length;
+		console.log("Anything you put here loads last, so you have access to jQuery and all plugins. \n");
+		console.log("var $h2s = $('h2').length;");
+		console.log("There are " + $h2s + " <h2> tags on the page!");
 
-	var $h2s = $('h2').length;
-	console.log("Anything you put here loads last, so you have access to jQuery and all plugins. \n");
-	console.log("var $h2s = $('h2').length;");
-	console.log("There are " + $h2s + " <h2> tags on the page!");
+		// Auto ToC
+		(function($){
+			var ToC =
+				"<nav class='table-of-contents'>" +
+					"<ul>";
 
-	// Auto ToC
-	(function($){
-		var ToC =
-			"<nav class='table-of-contents'>" +
-				"<ul>";
+			var newLine, el, title, link;
 
-		var newLine, el, title, link;
+			$(".section-title").each(function() {
 
-		$(".section-title").each(function() {
+				el = $(this);
+				title = el.text();
+				link = "#" + el.attr("id");
 
-			el = $(this);
-			title = el.text();
-			link = "#" + el.attr("id");
+				newLine =
+					"<li>" +
+						"<a href='" + link + "'>" +
+							title +
+						"</a>" +
+					"</li>";
 
-			newLine =
-				"<li>" +
-					"<a href='" + link + "'>" +
-						title +
-					"</a>" +
-				"</li>";
+				ToC += newLine;
 
-			ToC += newLine;
+			});
 
-		});
+			ToC +=
+				 "</ul>" +
+				"</nav>";
 
-		ToC +=
-			 "</ul>" +
-			"</nav>";
+			$("#toc").prepend(ToC);
+		})(jQuery);
 
-		$("#toc").prepend(ToC);
-	})(jQuery);
-
-</script>
-<% end %>
+	</script>
+	<% end %>
+</div>
