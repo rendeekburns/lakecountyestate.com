@@ -17,7 +17,10 @@
 		}
 	}
 }
-.site-footer{}
+.site-footer{
+	text-align: center;
+	font-size: .8em;
+}
 
 
 .profile-img {
@@ -35,7 +38,10 @@
 	
 	padding: 10% 0 15% 0;
 	@include media($medium-screen  + 15) {
-		padding: 10% 0 13% 0;
+		padding: 10% 0 10% 0;
+		-moz-box-shadow:none;
+	 	-webkit-box-shadow: none;
+  		box-shadow: none;
 	}
 
 	.caption {	
