@@ -1,0 +1,32 @@
+---
+title: About Rendee K. Burns
+---
+
+<div class="full-bleed-text">
+	<div class="container">
+		
+		<%= image_tag 'agent-profile.jpg', class: 'profile-img' %>
+		<p>
+			<h1 class="page-title">Rendee K. Burns</h1>
+			<%= lorem.paragraphs 1 %>
+		</p>
+		<p><%= lorem.paragraphs 1 %></p>
+	</div>
+</div>
+
+<div class="container">
+
+	<br clear="all" />
+
+	<h1>Testimonials</h1>
+	
+	<% 5.times do %>
+		<div class="testimonial">
+			<%= image_tag lorem.image('100x100') %>
+			<blockquote><%= lorem.words 50 %></blockquote>
+		</div>
+	<% end %>
+	
+	
+</div>
+

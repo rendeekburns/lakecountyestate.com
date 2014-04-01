@@ -37,6 +37,13 @@
 	}
 }
 
+
+.profile-img {
+	float:left;
+	margin-right:1.5em;
+	height:auto;
+}
+
 // ------------------------------------------------------------
 // Site Nav
 // ------------------------------------------------------------
@@ -72,7 +79,6 @@
 		}
 
 		a {
-			font-weight:bold;
 			color:$secondary;
 			@include trailing-hovers;
 			@include media($medium-screen) {

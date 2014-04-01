@@ -1,0 +1,26 @@
+.full-bleed-img {
+	overflow: hidden;
+	max-height:500px;
+	img {
+		width:100%;
+		height:auto;
+		margin-top:-10%;
+	}
+
+}
+
+.listing {
+
+	@include media($medium-screen) {
+		@include clearfix;
+		margin:2em 0;
+		img {
+			float:left;
+			margin-right:2em;
+		}
+		p { 
+			float:left;
+			max-width:600px;
+		}
+	}
+}

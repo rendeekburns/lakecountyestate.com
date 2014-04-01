@@ -1,0 +1,18 @@
+---
+title: Lake County Property Listings
+---
+
+<div class="full-bleed-img">
+	<%= image_tag 'placeholder_house.jpg' %>
+</div>
+<div class="container">
+	<h1>Property Listings</h1>
+
+	<% 5.times do %>
+		<div class="listing">
+			<%= image_tag lorem.image('200x200') %>
+			<p><%= lorem.words 50 %></p>
+		</div>
+	<% end %>
+</div>
+

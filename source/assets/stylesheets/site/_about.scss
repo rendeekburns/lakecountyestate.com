@@ -1,0 +1,26 @@
+.full-bleed-text {
+	background-color:$white-smoke;
+	padding:3em 0;
+
+	h1 {
+		color:$tertiary;
+	}
+}
+
+.testimonial {
+
+	@include media($medium-screen) {
+		@include clearfix;
+		
+		img {
+			float:left;
+			margin-right:1em;
+			margin-bottom:2em;
+		}
+		blockquote {
+			margin-top:5px;
+			float:left;
+			width:75%;
+		}
+	}
+}

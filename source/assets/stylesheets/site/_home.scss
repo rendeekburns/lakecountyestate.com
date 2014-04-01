@@ -1,11 +1,5 @@
-h1 {
-}
-.profile-img {
-	float:left;
-	margin-right:1em;
-	height:auto;
-}
-.full-bleed-bg {
+
+.full-bleed-image {
 	
 	background: url('/assets/images/placeholder_pines.jpg') no-repeat center center;
 	background-size: cover;
@@ -23,7 +17,7 @@ h1 {
 
 	.caption {	
 		color:lighten($blue, 40);
-		text-shadow: 0px 2px 8px $dark-gray;
+		text-shadow: 0px 3px 8px $dark-gray;
 		font-size:.8em;
 		text-align:center;
 
