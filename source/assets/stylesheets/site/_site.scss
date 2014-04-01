@@ -3,12 +3,12 @@
 // ------------------------------------------------------------
 .site-header {
 	@include clearfix;
-	@include linear-gradient($primary, darken($primary, 25));
+	@include linear-gradient($primary, darken($primary, 15));
+	//background-color: $primary;
 	padding:20px 0;
 }
 
 .site-main{
-
 	h2 {
 		font-size:1.6em;
 
@@ -22,61 +22,12 @@
 	font-size: .8em;
 }
 
-
-.profile-img {
-	float:left;
-	margin-right:1em;
-	height:auto;
-}
-.full-bleed-bg {
-	
-	background: url('/assets/images/lake-hero.jpg') no-repeat center center;
-	background-size: cover;
-    -moz-box-shadow:    0px 10px 10px -6px lighten($black,25);
- 	-webkit-box-shadow: 0px 10px 10px -6px lighten($black,25);
-  	box-shadow:         0px 10px 10px -6px lighten($black,25);
-	
-	padding: 10% 0 15% 0;
-	@include media($medium-screen  + 15) {
-		padding: 10% 0 10% 0;
-		-moz-box-shadow:none;
-	 	-webkit-box-shadow: none;
-  		box-shadow: none;
-	}
-
-	.caption {	
-		color:lighten($blue, 40);
-		text-shadow: 0px 2px 8px $dark-gray;
-		font-size:.8em;
-		text-align:center;
-
-		h1 {
-			font-size:3em;
-			margin:0;
-		}
-		p {
-			font-size:1em;
-		}
-
-		@include media($medium-screen  + 15) {
-			h1 {
-				font-size:6em;
-			}
-			p {
-				font-size:2em;
-			}
-		}
-	}
-}
-
 .col-one-third {
-
 	@include media($medium-screen) {
 		@include span-columns(4);
 	}
 }
 .col-two-third {
-
 	@include media($medium-screen) {
 		@include span-columns(8);
 		padding-right:1em;
@@ -118,6 +69,7 @@
 		}
 
 		a {
+			font-weight:bold;
 			color:$secondary;
 			@include trailing-hovers;
 			@include media($medium-screen) {

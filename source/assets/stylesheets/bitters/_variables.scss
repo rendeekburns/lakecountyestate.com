@@ -24,6 +24,7 @@ $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $emerald-green: #50C878;
+$crimson-red: #990000;
 $black: #000000;
 
 // Body Color
@@ -51,6 +52,6 @@ $success-color: $light-green;
 $one-pixel: 0.0625em; // Used for setting max-width mq's
 $unit: $base-font-size;
 
-$primary: $blue;
+$primary: darken($emerald-green, 30);;
 $secondary: $white;
-$tertiary: darken($primary, 35);
+$tertiary: $crimson-red;
