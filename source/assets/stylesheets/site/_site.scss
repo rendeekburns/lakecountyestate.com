@@ -6,12 +6,15 @@
 	@include linear-gradient($primary, darken($primary, 15));
 	//background-color: $primary;
 	padding:20px 0;
+
+	@include media($medium-screen) {
+		padding:12px 0;
+	}
 }
 
 .site-main{
 	h2 {
 		font-size:1.6em;
-
 		@include media($medium-screen  + 15) {
 			font-size:2em;
 		}

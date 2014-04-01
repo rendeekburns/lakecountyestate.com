@@ -32,11 +32,11 @@ $base-body-color: white;
 
 //  Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $crimson-red;
 
 //  Text Link Colors
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$base-link-color: darken($emerald-green, 40);
+$hover-link-color: lighten($base-link-color, 10);
 
 // Border color
 $base-border-color: $light-gray;
